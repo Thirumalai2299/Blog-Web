@@ -1,0 +1,55 @@
+Basics :
+
+1.To install django : 
+		pip install django
+
+2.To see all django-admin cmnds :
+		django-admin
+
+3.To create an project using django :
+		django-admin startproject (appname) ----------------------------Project
+
+4.To create an application inside a project :
+		* first go into project directory
+		run : 
+			django-admin startapp (modulename) 	------------------------module
+		NOTE** :
+			after creating the app module add the config file to settings.py
+				->Goto Module folder
+				->go inside apps.py copy the **class name**
+				->add this to settings.py in INSTALLED APPS
+						(modulename).apps.(classname)
+
+5.To run server :
+		python manage.py runserver
+
+6.To configure Urls.py :
+ 		configure the project urls.py file
+ 		also create and configure urls.py file
+
+7.To set response and respond use Views.py :
+		configure views.py file
+
+8.For templates :
+		Create a templates folder in that particular module folder that u wanted in frontend
+		Put the html files in template folder 
+
+9.Jinja tool:
+	The main use of jinja tool is to use python codes inside HTML files
+		1.for creating block;
+		     use {% --- %}
+		     eg : use {% for i in range()%}
+		              {% endfor %}
+
+		          also 
+		          		{% block content %}
+		          		{% endblock content %}
+
+		2.for accessing variable names ;
+			 use {{ ----- }}
+			 eg : {{ post.title }}		
+
+		3.To call one html file in another html file by :
+				{% extends "path of html file" %}
+
+				
